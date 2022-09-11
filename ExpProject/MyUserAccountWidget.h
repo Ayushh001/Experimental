@@ -102,6 +102,9 @@ public:
 		void NotifyRegisterSuccess(const FRegisterResponse& fRegisterResponse);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "AccountClient")
+		void NotifyFalseSuccess(const FRegisterResponse& fRegisterResponse);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "AccountClient")
 		void NotifyRegisterFail();
 
 	// Get user characters
